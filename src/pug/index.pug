@@ -1,0 +1,26 @@
+include abstracts/functions.pug
+include abstracts/vars.pug
+
+include partials/section.pug
+
+doctype html
+html(lang='en')
+	head
+		meta(charset='UTF-8')
+		title NPM scripts starter by Irina Illustrova
+		meta(name='description' content='Front End developer Irina Illustrova -  portfolio and personal page')
+		meta(http-equiv='X-UA-Compatible' content='IE=edge')
+		meta(name='viewport' content='width=device-width, initial-scale=1')
+		base(href="/")
+		//-Fonts
+		link(href="https://fonts.googleapis.com/css?family=Lato:400,400i,700|Raleway:600,900" rel="stylesheet")
+		//-Stylesheets
+		link(rel='stylesheet', href=`/css/main.css`)
+		link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css")
+	body
+		div.wrapper.container-fluid.px-0
+			main.main-content.px-2.mr-1.mr-md-4
+				+section(class="d-flex flex-column flex-grow-1")
+					h2 Hello test
+		script(src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous" defer)
+		script(src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous" defer)
