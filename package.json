@@ -1,14 +1,14 @@
 {
 	"name": "npm-scripts-starter",
-	"version": "1.0.0",
+	"version": "1.1.0",
 	"description": "Minimal project template",
 	"main": "index.js",
 	"scripts": {
 		"start": "npm-run-all --parallel watch:*",
-		"watch:css": "onchange \"src/sass/**/*.sass\" -- npm run build:css",
+		"watch:css": "onchange \"src/scss/**/*.scss\" -- npm run build:css",
 		"watch:html": "onchange \"src/pug/**/*.pug\" -- npm run build:html",
 		"watch:js": "onchange \"src/js/**/*.js\" -- npm run build:js",
-		"watch:serve": "browser-sync --server \"dist/\" start --files \"**/*.html\" \"**/*.css\"",
+		"watch:serve": "browser-sync --server \"dist/\" start --files \"**/*.html\" \"**/*.css\" \"**/*.js\"",
 		"build:html": "pug --output-style compressed -o dist/ src/pug/index.pug",
 		"build:css": "mkdirp dist/css && node-sass --output-style compressed --include-path scss \"src/scss/main.scss\" \"dist/css/main.css\"",
 		"build:js": "mkdirp dist/js && ncp src/js dist/js",
@@ -18,20 +18,31 @@
 	},
 	"author": "Irina Illustrova",
 	"license": "ISC",
-	"dependencies": {
-		"bulma": "^0.7.5"
-	},
+	"dependencies": {},
 	"devDependencies": {
+		"@prettier/plugin-pug": "^1.4.4",
 		"browser-sync": "^2.26.7",
-		"gh-pages": "^2.1.1",
+		"eslint": "^7.4.0",
+		"eslint-config-prettier": "^6.11.0",
+		"eslint-plugin-prettier": "^3.1.4",
+		"gh-pages": "^3.1.0",
+		"glob": "^7.1.6",
 		"html-minifier": "^4.0.0",
-		"imagemin-cli": "^4.0.1",
+		"imagemin-cli": "^6.0.0",
+		"mkdirp": "^1.0.4",
 		"ncp": "^2.0.0",
-		"node-sass": "^4.12.0",
+		"node-sass": "^4.14.1",
 		"npm-run-all": "^4.1.5",
-		"onchange": "^6.0.0",
-		"pug": "^2.0.4",
+		"onchange": "^7.0.2",
+		"prettier": "^2.0.5",
+		"pug": "^3.0.0",
 		"pug-cli": "^1.0.0-alpha6",
-		"sharp": "^0.21.3"
+		"pug-lint": "^2.6.0",
+		"sharp": "^0.25.4",
+		"stylelint": "^13.6.1",
+		"stylelint-config-standard": "^20.0.0",
+		"stylelint-order": "^4.1.0",
+		"stylelint-prettier": "^1.1.2",
+		"stylelint-scss": "^3.18.0"
 	}
 }

@@ -1,0 +1,12 @@
+{
+	"disallowClassAttributeWithStaticValue": true,
+	"disallowMultipleLineBreaks": true,
+	"disallowSpacesInsideAttributeBrackets": true,
+	"requireClassLiteralsBeforeIdLiterals": true,
+	"requireClassLiteralsBeforeAttributes": true,
+	"requireIdLiteralsBeforeAttributes": true,
+	"requireLowerCaseAttributes": true,
+	"requireLowerCaseTags": true,
+	"validateDivTags": true,
+	"validateIndentation": "\t"
+}

@@ -1,16 +1,26 @@
 {
 	"trailingComma": "es5",
-	"singleQuote": true,
+	"singleQuote": false,
 	"printWidth": 80,
 	"semi": true,
 	"parser": "flow",
 	"useTabs": true,
 	"jsxBracketSameLine": true,
+	"endOfLine": "lf",
 	"overrides": [
 		{
 			"files": "*.scss",
 			"options": {
 				"parser": "scss"
+			}
+		},
+		{
+			"files": "*.pug",
+			"options": {
+				"parser": "pug",
+				"semi": true,
+				"useTabs": true,
+				"commentPreserveSpaces": "keep-all"
 			}
 		}
 	]
