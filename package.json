@@ -4,7 +4,7 @@
 	"description": "Minimal project template",
 	"main": "index.js",
 	"scripts": {
-		"start": "npm-run-all --parallel watch:*",
+		"start": "npm run build && npm-run-all --parallel watch:*",
 		"watch:css": "onchange \"src/scss/**/*.scss\" -- npm run build:css",
 		"watch:html": "onchange \"src/pug/**/*.pug\" -- npm run build:html",
 		"watch:js": "onchange \"src/js/**/*.js\" -- npm run build:js",
