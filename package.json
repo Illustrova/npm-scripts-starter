@@ -38,7 +38,7 @@
 		"pug": "^3.0.0",
 		"pug-cli": "^1.0.0-alpha6",
 		"pug-lint": "^2.6.0",
-		"sharp": "^0.25.4",
+		"sharp": "^0.30.5",
 		"stylelint": "^13.6.1",
 		"stylelint-config-standard": "^20.0.0",
 		"stylelint-order": "^4.1.0",
